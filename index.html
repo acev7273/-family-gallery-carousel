@@ -1,0 +1,78 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Gallery Carousel</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <h1>Family Gallery</h1>
+
+    <!-- Swiper Container -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/aunt_barbara_jean_mosby.jpeg" alt="Aunt Barbara Jean Mosby">
+                <p>Aunt Barbara Jean Mosby</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/kenneth_angela_yearwood_pre_US.jpeg" alt="Kenneth and Angela Yearwood (Pre-US)">
+                <p>Kenneth and Angela Yearwood (Pre-US)</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/kenneth_yearwood_grandfather.jpeg" alt="Kenneth Yearwood (Grandfather)">
+                <p>Kenneth Yearwood (Grandfather)</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/michael_henry_mosby.jpeg" alt="Michael Henry Mosby">
+                <p>Michael Henry Mosby</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/uncle_lincoln_yearwood.jpeg" alt="Uncle Lincoln Yearwood">
+                <p>Uncle Lincoln Yearwood</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/uncle_marshall_aunt_barbara_mosby.jpeg" alt="Uncle Marshall and Aunt Barbara Mosby">
+                <p>Uncle Marshall and Aunt Barbara Mosby</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/uncles_yearwood.jpeg" alt="Uncles Yearwood">
+                <p>Uncles Yearwood</p>
+            </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Add Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 1,  // Show one slide at a time
+            spaceBetween: 10,  // Add space between slides
+        });
+    </script>
+
+</body>
+</html>
